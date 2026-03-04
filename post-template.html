@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ✏️ EDIT: Post title -->
+  <title>POST TITLE — YourOrg Blog</title>
+  <meta name="description" content="POST DESCRIPTION">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo">Your<span>Org</span></a>
+      <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../issues.html">Issues</a></li>
+        <li><a href="../resources.html">Resources</a></li>
+        <li><a href="index.html">Blog</a></li>
+        <li><a href="../contact.html" class="nav-cta">Get Involved</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- POST HEADER -->
+  <div class="page-hero" style="text-align:left; max-width: 760px; margin: 0 auto; padding: 3rem 2rem 2.5rem;">
+    <div class="breadcrumb"><a href="../index.html">Home</a> <span>›</span> <a href="index.html">Blog</a> <span>›</span> Post</div>
+    <!-- ✏️ EDIT: Tag -->
+    <div class="blog-tag mt-2">Category Tag</div>
+    <!-- ✏️ EDIT: Title -->
+    <h1 style="margin-top:0.75rem; font-size: clamp(1.6rem, 4vw, 2.4rem);">Your Blog Post Title Goes Here</h1>
+    <!-- ✏️ EDIT: Meta -->
+    <div class="blog-meta" style="margin-top:1rem;">By Author Name · Month DD, YYYY · X min read</div>
+  </div>
+
+  <!-- FEATURED DIAGRAM -->
+  <div style="max-width: 760px; margin: 0 auto; padding: 0 2rem 2.5rem;">
+    <!-- ✏️ REPLACE with your diagram SVG or image -->
+    <div class="diagram-placeholder" style="min-height: 240px;">
+      <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+        <rect x="8" y="8" width="64" height="64" rx="10" stroke="#c8bfee" stroke-width="2" stroke-dasharray="5 3"/>
+        <rect x="20" y="28" width="40" height="6" rx="3" fill="#c8bfee"/>
+        <rect x="20" y="40" width="30" height="6" rx="3" fill="#ede9f9"/>
+        <rect x="20" y="52" width="20" height="6" rx="3" fill="#ede9f9"/>
+      </svg>
+      <p>Replace with a diagram, chart, or illustration that supports this post</p>
+    </div>
+  </div>
+
+  <!-- POST CONTENT -->
+  <article class="section-cozy bg-white" style="padding-top: 1rem;">
+    <div class="prose section-inner">
+
+      <!-- ✏️ WRITE your post content below using standard HTML -->
+
+      <p>Start with a compelling opening paragraph. Set up the key question or challenge this post addresses. Keep it short — 2-3 sentences that make the reader want to continue.</p>
+
+      <h2>First Section Heading</h2>
+      <p>Your first main point goes here. Use clear, plain language. Advocacy writing is most powerful when it's accessible to everyone — avoid jargon, explain terms when you use them, and write like you're talking to a neighbor.</p>
+
+      <p>A second paragraph in this section. Break up long thoughts. Shorter paragraphs are easier to read.</p>
+
+      <!-- ✏️ Add a diagram here if helpful -->
+      <div class="diagram-placeholder">
+        <svg width="60" height="60" viewBox="0 0 60 60">
+          <rect x="5" y="5" width="50" height="50" rx="8" stroke="#c8bfee" stroke-width="2" stroke-dasharray="4 3"/>
+          <circle cx="30" cy="30" r="12" stroke="#7b68c8" stroke-width="2"/>
+          <circle cx="30" cy="30" r="4" fill="#5440a4"/>
+        </svg>
+        <p>Optional inline diagram or data visualization</p>
+      </div>
+
+      <h2>Second Section Heading</h2>
+      <p>Continue your argument or narrative here. Use subheadings every 3-4 paragraphs to help readers scan.</p>
+
+      <ul>
+        <li>Use lists for key facts, steps, or supporting points</li>
+        <li>Keep list items parallel in structure</li>
+        <li>Three to five items is ideal</li>
+      </ul>
+
+      <h2>What You Can Do</h2>
+      <p>Always close with a clear call to action. What do you want the reader to do next? Contact a rep? Share this post? Sign up?</p>
+
+      <!-- Callout quote -->
+      <div class="callout-cozy">
+        <p>"A memorable pull quote or key statistic that reinforces your main point."</p>
+        <cite>— Source name or attribution</cite>
+      </div>
+
+      <p>Closing paragraph. Summarize the post's key takeaway in one sentence. Then direct the reader to next steps or related content.</p>
+
+    </div>
+  </article>
+
+  <!-- POST FOOTER: SHARE + RELATED -->
+  <section class="section-cozy bg-cream" style="padding: 3rem 2rem;">
+    <div style="max-width: 760px; margin: 0 auto;">
+
+      <!-- Tags -->
+      <div style="margin-bottom: 2.5rem; padding-bottom: 2rem; border-bottom: var(--dotted-border);">
+        <span style="font-size:0.82rem; color:var(--text-light); margin-right:0.5rem;">Filed under:</span>
+        <a href="index.html" class="blog-tag">Category</a>
+        <a href="index.html" class="blog-tag">Tag</a>
+      </div>
+
+      <!-- Related posts -->
+      <div class="section-eyebrow mb-2">Related Posts</div>
+      <div class="grid-2">
+        <a href="post-template.html" class="blog-card" style="display:block; text-decoration:none; color:inherit;">
+          <div class="blog-card-body">
+            <div class="blog-tag">Category</div>
+            <h4>Related Post Title One</h4>
+            <div class="blog-meta">Date · X min read</div>
+          </div>
+        </a>
+        <a href="post-template.html" class="blog-card" style="display:block; text-decoration:none; color:inherit;">
+          <div class="blog-card-body">
+            <div class="blog-tag">Category</div>
+            <h4>Related Post Title Two</h4>
+            <div class="blog-meta">Date · X min read</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="text-center mt-4">
+        <a href="index.html" class="btn btn-outline">← Back to Blog</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo">Your<span>Org</span></div>
+          <p>Advocating for a better future. Building the community that makes change happen.</p>
+        </div>
+        <div class="footer-col"><h5>Pages</h5><ul>
+          <li><a href="../about.html">About Us</a></li>
+          <li><a href="../issues.html">Our Issues</a></li>
+          <li><a href="../resources.html">Resources</a></li>
+        </ul></div>
+        <div class="footer-col"><h5>Get Involved</h5><ul>
+          <li><a href="../contact.html">Contact Us</a></li>
+          <li><a href="../volunteer.html">Volunteer</a></li>
+          <li><a href="../donate.html">Donate</a></li>
+        </ul></div>
+        <div class="footer-col"><h5>Resources</h5><ul>
+          <li><a href="index.html">Blog</a></li>
+          <li><a href="../faq.html">FAQ</a></li>
+        </ul></div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 YourOrg. All rights reserved.</span>
+        <span>Built with care</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
