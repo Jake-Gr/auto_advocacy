@@ -620,6 +620,36 @@ em { font-family: var(--font-display); font-style: italic; }
   .grid-3, .grid-4 { grid-template-columns: 1fr; }
 }
 
+/* ── Care Option Tags ── */
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 1rem;
+}
+
+.care-tag {
+  font-size: 0.72rem;
+  font-weight: 500;
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+  background: var(--purple-blush);
+  color: var(--purple-mid);
+  border: 1px dotted var(--purple-soft);
+}
+
+.care-tag.good {
+  background: #edf7ed;
+  color: #2e7d32;
+  border-color: #a5d6a7;
+}
+
+.care-tag.watch {
+  background: #fff8e1;
+  color: #e65100;
+  border-color: #ffcc80;
+}
+
 /* ── FAQ List ── */
 .faq-list {
   display: flex;
