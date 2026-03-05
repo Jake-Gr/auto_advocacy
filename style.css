@@ -619,3 +619,33 @@ em { font-family: var(--font-display); font-style: italic; }
   .footer-grid { grid-template-columns: 1fr; }
   .grid-3, .grid-4 { grid-template-columns: 1fr; }
 }
+
+/* ── FAQ List ── */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.faq-item {
+  padding: 1.75rem 0;
+  border-bottom: 1px dotted var(--border-soft);
+}
+
+.faq-item:first-child { padding-top: 0; }
+.faq-item:last-child  { border-bottom: none; padding-bottom: 0; }
+
+.faq-item h4 {
+  font-size: 1.05rem;
+  color: var(--purple-deep);
+  margin-bottom: 0.6rem;
+  font-family: var(--font-display);
+  font-weight: 600;
+}
+
+.faq-item p {
+  font-size: 0.97rem;
+  color: var(--text-mid);
+  margin: 0;
+  line-height: 1.75;
+}
