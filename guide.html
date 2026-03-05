@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Complete Guide — Auto Accident Care in Washington State</title>
+  <meta name="description" content="Everything you need to know after an auto accident in Washington State. Injuries, insurance, PIP, care options, finding providers, and recovering fully.">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+
+    /* ── Guide Layout ── */
+    .guide-wrap {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 0;
+      max-width: 1100px;
+      margin: 0 auto;
+      align-items: start;
+    }
+
+    /* ── TOC Sidebar ── */
+    .toc-sidebar {
+      position: sticky;
+      top: 80px;
+      padding: 2rem 1.5rem 2rem 0;
+      border-right: 2px dotted var(--purple-soft);
+      align-self: start;
+    }
+    .toc-sidebar h5 {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--purple-mid);
+      margin-bottom: 1.25rem;
+    }
+    .toc-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .toc-list li {
+      margin-bottom: 0.15rem;
+    }
+    .toc-list a {
+      display: block;
+      padding: 0.45rem 0.65rem;
+      border-radius: 6px;
+      font-size: 0.82rem;
+      color: var(--text-mid);
+      text-decoration: none;
+      line-height: 1.4;
+      transition: background 0.15s, color 0.15s;
+      border-left: 2px solid transparent;
+    }
+    .toc-list a:hover {
+      background: var(--purple-blush);
+      color: var(--purple-anchor);
+      border-left-color: var(--purple-anchor);
+    }
+    .toc-list a.active {
+      background: var(--purple-blush);
+      color: var(--purple-anchor);
+      border-left-color: var(--purple-anchor);
+      font-weight: 600;
+    }
+    .toc-chapter-num {
+      display: inline-block;
+      width: 18px;
+      font-size: 0.72rem;
+      color: var(--purple-soft);
+      font-weight: 600;
+    }
+
+    /* ── Guide Content ── */
+    .guide-content {
+      padding: 2rem 0 2rem 3rem;
+    }
+
+    /* ── Chapter ── */
+    .guide-chapter {
+      padding: 4rem 0;
+      border-bottom: 2px dotted var(--border-soft);
+      scroll-margin-top: 90px;
+    }
+    .guide-chapter:last-of-type {
+      border-bottom: none;
+    }
+
+    .chapter-eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+    }
+    .chapter-num {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      background: var(--purple-anchor);
+      color: white;
+      border-radius: 50%;
+      font-family: var(--font-display);
+      font-size: 0.9rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .chapter-label {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+      color: var(--purple-mid);
+    }
+    .guide-chapter h2 {
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      margin-bottom: 1.25rem;
+      color: var(--purple-deep);
+    }
+    .guide-chapter p {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: var(--text-mid);
+      max-width: 700px;
+    }
+    .guide-chapter p + p {
+      margin-top: 1rem;
+    }
+
+    /* ── Callout Box ── */
+    .callout {
+      background: var(--purple-blush);
+      border: var(--dotted-border);
+      border-radius: var(--radius-md);
+      padding: 1.25rem 1.6rem;
+      margin: 1.75rem 0;
+      max-width: 700px;
+    }
+    .callout p { margin: 0; font-size: 0.97rem; }
+    .callout strong { color: var(--purple-deep); }
+    .callout.warning {
+      background: #fff8e1;
+      border-color: #ffcc80;
+    }
+    .callout.warning strong { color: #b45309; }
+    .callout.danger {
+      background: #fdecea;
+      border-color: #ef9a9a;
+    }
+    .callout.danger strong { color: #c62828; }
+    .callout.success {
+      background: #edf7ed;
+      border-color: #a5d6a7;
+    }
+    .callout.success strong { color: #2e7d32; }
+
+    /* ── Checklist ── */
+    .guide-checklist {
+      list-style: none;
+      margin: 1.5rem 0;
+      padding: 0;
+      max-width: 700px;
+    }
+    .guide-checklist li {
+      padding: 0.7rem 0 0.7rem 2.1rem;
+      position: relative;
+      color: var(--text-mid);
+      border-bottom: 1px dotted var(--border-soft);
+      font-size: 0.97rem;
+      line-height: 1.65;
+    }
+    .guide-checklist li:last-child { border-bottom: none; }
+    .guide-checklist li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: var(--purple-mid);
+      font-weight: 700;
+    }
+
+    /* ── Two col guide ── */
+    .guide-two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin: 1.75rem 0;
+      max-width: 700px;
+    }
+    @media (max-width: 600px) {
+      .guide-two-col { grid-template-columns: 1fr; }
+    }
+
+    .guide-col-box {
+      background: var(--white-pure);
+      border: var(--dotted-border);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+    }
+    .guide-col-box h4 {
+      font-size: 1rem;
+      margin-bottom: 0.75rem;
+      color: var(--purple-deep);
+    }
+    .guide-col-box ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .guide-col-box ul li {
+      font-size: 0.92rem;
+      color: var(--text-mid);
+      padding: 0.35rem 0 0.35rem 1.25rem;
+      border-bottom: 1px dotted var(--border-soft);
+      position: relative;
+      line-height: 1.5;
+    }
+    .guide-col-box ul li:last-child { border-bottom: none; }
+    .guide-col-box ul li::before {
+      content: '·';
+      position: absolute;
+      left: 0.25rem;
+      color: var(--purple-mid);
+      font-weight: 700;
+    }
+
+    /* ── Inline cards ── */
+    .inline-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin: 1.75rem 0;
+      max-width: 700px;
+    }
+    .inline-card {
+      background: var(--white-pure);
+      border: var(--dotted-border);
+      border-radius: var(--radius-md);
+      padding: 1.25rem;
+    }
+    .inline-card .ic-icon { font-size: 1.5rem; margin-bottom: 0.5rem; display: block; }
+    .inline-card h4 { font-size: 0.95rem; margin-bottom: 0.35rem; color: var(--purple-deep); }
+    .inline-card p { font-size: 0.875rem; color: var(--text-mid); margin: 0; line-height: 1.55; }
+
+    /* ── SVG Diagram wrapper ── */
+    .guide-diagram {
+      margin: 2rem 0;
+      background: var(--cream);
+      border: var(--dotted-border);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem;
+      max-width: 700px;
+      overflow: hidden;
+    }
+    .guide-diagram p.diagram-caption {
+      margin: 0.75rem 0 0;
+      font-size: 0.8rem;
+      color: var(--text-light);
+      text-align: center;
+      font-style: italic;
+    }
+
+    /* ── Timeline ── */
+    .guide-timeline {
+      position: relative;
+      padding-left: 2rem;
+      border-left: 2px dotted var(--purple-soft);
+      margin: 1.75rem 0;
+      max-width: 680px;
+    }
+    .guide-tl-item {
+      margin-bottom: 2.25rem;
+      position: relative;
+    }
+    .guide-tl-item:last-child { margin-bottom: 0; }
+    .guide-tl-dot {
+      position: absolute;
+      left: -2.6rem;
+      width: 1.1rem;
+      height: 1.1rem;
+      background: var(--purple-anchor);
+      border: 3px solid var(--white-pure);
+      border-radius: 50%;
+      top: 0.1rem;
+    }
+    .guide-tl-item .tl-label {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--purple-mid);
+      margin-bottom: 0.25rem;
+    }
+    .guide-tl-item h4 {
+      font-size: 1rem;
+      color: var(--purple-deep);
+      margin-bottom: 0.4rem;
+    }
+    .guide-tl-item p {
+      font-size: 0.93rem;
+      color: var(--text-mid);
+      margin: 0;
+      max-width: none;
+    }
+
+    /* ── Tag row (reuse) ── */
+    .tag-row { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.85rem; }
+    .care-tag {
+      font-size: 0.72rem;
+      font-weight: 500;
+      padding: 0.2rem 0.65rem;
+      border-radius: 999px;
+      background: var(--purple-blush);
+      color: var(--purple-mid);
+      border: 1px dotted var(--purple-soft);
+    }
+    .care-tag.good { background: #edf7ed; color: #2e7d32; border-color: #a5d6a7; }
+    .care-tag.watch { background: #fff8e1; color: #e65100; border-color: #ffcc80; }
+    .care-tag.urgent { background: #fdecea; color: #c62828; border-color: #ef9a9a; }
+
+    /* ── Resources grid ── */
+    .resources-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.25rem;
+      margin: 1.75rem 0;
+    }
+    .resource-card {
+      background: var(--white-pure);
+      border: var(--dotted-border);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+    .resource-card .rc-type {
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--purple-mid);
+    }
+    .resource-card h4 {
+      font-size: 0.97rem;
+      color: var(--purple-deep);
+      margin: 0;
+    }
+    .resource-card p {
+      font-size: 0.875rem;
+      color: var(--text-mid);
+      margin: 0;
+      line-height: 1.55;
+    }
+    .resource-card a.rc-link {
+      font-size: 0.82rem;
+      color: var(--purple-anchor);
+      font-weight: 600;
+      text-decoration: none;
+      margin-top: 0.25rem;
+    }
+    .resource-card a.rc-link:hover { text-decoration: underline; }
+
+    /* ── Mobile ── */
+    @media (max-width: 820px) {
+      .guide-wrap {
+        grid-template-columns: 1fr;
+      }
+      .toc-sidebar {
+        position: static;
+        border-right: none;
+        border-bottom: 2px dotted var(--purple-soft);
+        padding: 1.5rem 0;
+        margin: 0 1.5rem;
+      }
+      .guide-content {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Your<span>Org</span></a>
+      <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      <ul class="nav-links">
+        <li><a href="start-here.html">Start Here</a></li>
+        <li><a href="guide.html">Full Guide</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="breadcrumb"><a href="index.html">Home</a> <span>›</span> Full Guide</div>
+    <h1>The Complete Guide</h1>
+    <p style="max-width:600px; margin: 0.75rem auto 0; color: var(--text-mid);">
+      Everything you need to know after an auto accident in Washington State — injuries, insurance, care, and how to fully recover.
+    </p>
+    <div style="margin-top: 1.5rem; display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap;">
+      <span class="care-tag good">9 Chapters</span>
+      <span class="care-tag good">Free &amp; Open</span>
+      <span class="care-tag good">Washington State</span>
+      <span class="care-tag">Not medical advice</span>
+    </div>
+  </div>
+
+  <!-- GUIDE BODY -->
+  <div style="background: var(--white-pure); padding: 2rem 1.5rem 5rem;">
+    <div class="guide-wrap">
+
+      <!-- TOC SIDEBAR -->
+      <aside class="toc-sidebar">
+        <h5>In this guide</h5>
+        <ul class="toc-list" id="toc-list">
+          <li><a href="#ch1"><span class="toc-chapter-num">01</span> Before a Crash</a></li>
+          <li><a href="#ch2"><span class="toc-chapter-num">02</span> First 72 Hours</a></li>
+          <li><a href="#ch3"><span class="toc-chapter-num">03</span> Your Injuries</a></li>
+          <li><a href="#ch4"><span class="toc-chapter-num">04</span> Common Mistakes</a></li>
+          <li><a href="#ch5"><span class="toc-chapter-num">05</span> Your Care Team</a></li>
+          <li><a href="#ch6"><span class="toc-chapter-num">06</span> Insurance &amp; PIP</a></li>
+          <li><a href="#ch7"><span class="toc-chapter-num">07</span> Recovery Paths</a></li>
+          <li><a href="#ch8"><span class="toc-chapter-num">08</span> Finding a Provider</a></li>
+          <li><a href="#ch9"><span class="toc-chapter-num">09</span> Resources</a></li>
+        </ul>
+      </aside>
+
+      <!-- MAIN CONTENT -->
+      <main class="guide-content">
+
+        <!-- ══ CHAPTER 1 ══ -->
+        <section class="guide-chapter" id="ch1">
+          <div class="chapter-eyebrow">
+            <div class="chapter-num">1</div>
+            <div class="chapter-label">Before a Crash</div>
+          </div>
+          <h2>What You Can Do Before It Ever Happens</h2>
+
+          <p>Most people don't think about crash preparation until they're sitting on the side of the road. But a few minutes of preparation — stored in your glove box or phone — can save you enormous stress in those chaotic first moments.</p>
+
+          <p>This isn't about being pessimistic. It's about being the kind of person who has what they need when they need it most.</p>
+
+          <div class="guide-diagram fade-up">
+            <svg width="100%" viewBox="0 0 620 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <marker id="g1arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+                  <path d="M0,0 L0,6 L8,3 z" fill="#7b68c8"/>
+                </marker>
+              </defs>
+              <!-- Box 1 -->
+              <rect x="10" y="28" width="110" height="72" rx="10" fill="white" stroke="#c8bfee" stroke-width="1.5" stroke-dasharray="5 3"/>
+              <text x="65" y="55" text-anchor="middle" font-size="18">📋</text>
+              <text x="65" y="74" text-anchor="middle" font-family="Lora,serif" font-size="10.5" font-weight="600" fill="#3b2a6e">Insurance Card</text>
+              <text x="65" y="89" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="#9b94b8">In glove box</text>
+              <!-- Arrow -->
+              <path d="M122 64 L138 64" stroke="#7b68c8" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#g1arr)"/>
+              <!-- Box 2 -->
+              <rect x="140" y="28" width="110" height="72" rx="10" fill="white" stroke="#c8bfee" stroke-width="1.5" stroke-dasharray="5 3"/>
+              <text x="195" y="55" text-anchor="middle" font-size="18">📱</text>
+              <text x="195" y="74" text-anchor="middle" font-family="Lora,serif" font-size="10.5" font-weight="600" fill="#3b2a6e">ICE Contacts</text>
+              <text x="195" y="89" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="#9b94b8">Saved in phone</text>
+              <!-- Arrow -->
+              <path d="M252 64 L268 64" stroke="#7b68c8" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#g1arr)"/>
+              <!-- Box 3 -->
+              <rect x="270" y="28" width="110" height="72" rx="10" fill="white" stroke="#c8bfee" stroke-width="1.5" stroke-dasharray="5 3"/>
+              <text x="325" y="55" text-anchor="middle" font-size="18">🏥</text>
+              <text x="325" y="74" text-anchor="middle" font-family="Lora,serif" font-size="10.5" font-weight="600" fill="#3b2a6e">Know Your PIP</text>
+              <text x="325" y="89" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="#9b94b8">Review policy</text>
+              <!-- Arrow -->
+              <path d="M382 64 L398 64" stroke="#7b68c8" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#g1arr)"/>
+              <!-- Box 4 -->
+              <rect x="400" y="28" width="110" height="72" rx="10" fill="white" stroke="#c8bfee" stroke-width="1.5" stroke-dasharray="5 3"/>
+              <text x="455" y="55" text-anchor="middle" font-size="18">📸</text>
+              <text x="455" y="74" text-anchor="middle" font-family="Lora,serif" font-size="10.5" font-weight="600" fill="#3b2a6e">Pre-Crash Photos</text>
+              <text x="455" y="89" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="#9b94b8">Document car state</text>
+              <!-- Box 5 final -->
+              <path d="M512 64 L528 64" stroke="#7b68c8" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#g1arr)"/>
+              <rect x="530" y="28" width="80" height="72" rx="10" fill="#5440a4" stroke="#3b2a6e" stroke-width="1.5"/>
+              <text x="570" y="55" text-anchor="middle" font-size="18">✅</text>
+              <text x="570" y="74" text-anchor="middle" font-family="Lora,serif" font-size="10.5" font-weight="600" fill="white">Prepared</text>
+              <text x="570" y="89" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="rgba(255,255,255,0.7)">For anything</text>
+            </svg>
+            <p class="diagram-caption">Five things to have in place before a crash ever happens.</p>
+          </div>
+
+          <h3 style="font-size: 1.1rem; margin: 2rem 0 0.75rem; color: var(--purple-deep);">Your pre-crash checklist</h3>
+          <ul class="guide-checklist fade-up">
+            <li><strong>Keep your insurance card in your glove box</strong> — digital copies work too, but paper survives a dead phone battery.</li>
+            <li><strong>Know your PIP limit</strong> — check your policy. Washington requires a minimum of $10,000, but many people have more and don't know it. Higher is always better.</li>
+            <li><strong>Save your insurer's claims number</strong> in your phone under a name like "Auto Insurance Claims" so you can find it fast under pressure.</li>
+            <li><strong>Take "before" photos of your vehicle</strong> — a simple walk-around once a year documents pre-existing damage, so nothing can be blamed on a crash that didn't cause it.</li>
+            <li><strong>Know your roadside assistance options</strong> — AAA, your insurer, or your car manufacturer's app. Panic and darkness make this much harder to figure out on the spot.</li>
+            <li><strong>Have a basic first aid kit</strong> — blanket, gloves, flashlight, basic bandages. Required in some states, smart in all of them.</li>
+          </ul>
+
+          <div class="callout fade-up">
+            <p><strong>Optional upgrade:</strong> Take 60 seconds to photograph your existing vehicle damage right now and store it in a labeled folder in your phone's photos. Future you will be grateful.</p>
+          </div>
+        </section>
+
+        <!-- ══ CHAPTER 2 ══ -->
+        <section class="guide-chapter" id="ch2">
+          <div class="chapter-eyebrow">
+            <div class="chapter-num">2</div>
+            <div class="chapter-label">First 72 Hours</div>
+          </div>
+          <h2>What to Do Right After the Crash</h2>
+
+          <p>The moments and days immediately following a crash are the most critical window — for your health, your documentation, and your insurance claim. Most people either do too little because they feel fine, or freeze because they don't know what comes next.</p>
+
+          <p>Here's what to do, in order.</p>
+
+          <div class="guide-diagram fade-up">
+            <svg width="100%" viewBox="0 0 620 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <marker id="g2arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+                  <path d="M0,0 L0,6 L8,3 z" fill="#7b68c8"/>
+                </marker>
+              </defs>
+              <!-- Timeline -->
+              <line x1="50" y1="80" x2="580" y2="80" stroke="#c8bfee" stroke-width="2" stroke-dasharray="6 4"/>
+              <!-- Crash dot -->
+              <circle cx="50" cy="80" r="10" fill="#c62828"/>
+              <text x="50" y="50" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="#9b94b8">Crash</text>
+              <text x="50" y="108" text-anchor="middle" font-family="Lora,serif" font-size="9.5" font-weight="600" fill="#c62828">Impact</text>
+              <!-- Adrenaline -->
+              <circle cx="160" cy="80" r="8" fill="#f59e0b"/>
+              <text x="160" y="50" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="#9b94b8">Minutes</text>
+              <text x="160" y="108" text-anchor="middle" font-family="Lora,serif" font-size="9.5" font-weight="600" fill="#b45309">Adrenaline</text>
+              <text x="160" y="122" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="8.5" fill="#9b94b8">Masks pain</text>
+              <!-- Hidden injury -->
+              <circle cx="280" cy="80" r="8" fill="#7b68c8"/>
+              <text x="280" y="50" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="#9b94b8">Hours later</text>
+              <text x="280" y="108" text-anchor="middle" font-family="Lora,serif" font-size="9.5" font-weight="600" fill="#5440a4">Injury hidden</text>
+              <text x="280" y="122" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="8.5" fill="#9b94b8">"I feel fine"</text>
+              <!-- Delayed pain -->
+              <circle cx="410" cy="80" r="8" fill="#5440a4"/>
+              <text x="410" y="50" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="#9b94b8">24–72 hrs</text>
+              <text x="410" y="108" text-anchor="middle" font-family="Lora,serif" font-size="9.5" font-weight="600" fill="#3b2a6e">Pain arrives</text>
+              <text x="410" y="122" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="8.5" fill="#9b94b8">Stiffness, ache</text>
+              <!-- Get care -->
+              <circle cx="550" cy="80" r="12" fill="#2e7d32"/>
+              <text x="550" y="50" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="#9b94b8">ASAP</text>
+              <text x="550" y="108" text-anchor="middle" font-family="Lora,serif" font-size="10" font-weight="700" fill="#2e7d32">Get Care</text>
+              <text x="550" y="122" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="8.5" fill="#9b94b8">Don't wait</text>
+              <!-- arrows -->
+              <path d="M60 80 L150 80" stroke="#c8bfee" stroke-width="1.5" marker-end="url(#g2arr)"/>
+              <path d="M170 80 L270 80" stroke="#c8bfee" stroke-width="1.5" marker-end="url(#g2arr)"/>
+              <path d="M290 80 L400 80" stroke="#c8bfee" stroke-width="1.5" marker-end="url(#g2arr)"/>
+              <path d="M420 80 L536 80" stroke="#c8bfee" stroke-width="1.5" marker-end="url(#g2arr)"/>
+            </svg>
+            <p class="diagram-caption">Why you feel fine at the scene — and why that doesn't mean you're uninjured.</p>
+          </div>
+
+          <div class="guide-timeline fade-up">
+            <div class="guide-tl-item">
+              <div class="guide-tl-dot" style="background: var(--purple-deep);"></div>
+              <div class="tl-label">At the scene</div>
+              <h4>Safety, documentation, information</h4>
+              <p>Get to safety. Call 911 if anyone is injured. Photograph everything — all vehicles from multiple angles, skid marks, street signs, weather, and any visible injuries. Get the other driver's name, insurance, license plate, and driver's license number. Get the police report number. Don't move your car until you're told to.</p>
+            </div>
+            <div class="guide-tl-item">
+              <div class="guide-tl-dot" style="background: var(--purple-anchor);"></div>
+              <div class="tl-label">Same day</div>
+              <h4>Notify insurance. Seek evaluation.</h4>
+              <p>Call your insurance company the same day — even if the accident wasn't your fault. Do not give a recorded statement to the other driver's insurer without legal guidance. Get a medical evaluation even if you feel fine. Adrenaline is masking your pain.</p>
+            </div>
+            <div class="guide-tl-item">
+              <div class="guide-tl-dot" style="background: var(--purple-mid);"></div>
+              <div class="tl-label">24–72 hours</div>
+              <h4>Document your symptoms in writing</h4>
+              <p>Write down every symptom you notice — stiffness, headache, trouble sleeping, mood changes, sensitivity to light. Date every entry. This journal becomes evidence if your claim is ever disputed. Pain that arrives days later is normal and expected — it's not "faking it." It's biology.</p>
+            </div>
+            <div class="guide-tl-item">
+              <div class="guide-tl-dot" style="background: var(--purple-soft);"></div>
+              <div class="tl-label">First week</div>
+              <h4>Start your care. Don't wait for it to "resolve."</h4>
+              <p>Begin treatment with whatever provider fits your symptoms. Early treatment dramatically improves outcomes for soft tissue injuries — and creates a documented medical record that insurance companies and attorneys will need later.</p>
+            </div>
+          </div>
+
+          <div class="callout warning fade-up">
+            <p><strong>Don't say "I'm fine" at the scene.</strong> It's natural to say it — but it can be used against you later. Stick to factual statements. "I don't know how I feel yet" is completely honest and much safer.</p>
+          </div>
+        </section>
+
+        <!-- ══ CHAPTER 3 ══ -->
+        <section class="guide-chapter" id="ch3">
+          <div class="chapter-eyebrow">
+            <div class="chapter-num">3</div>
+            <div class="chapter-label">Understanding Your Body</div>
+          </div>
+          <h2>What's Actually Happening Inside</h2>
+
+          <p>Auto accidents subject your body to forces that happen faster than your muscles can react. Even a low-speed collision can cause significant damage to soft tissue — and many of the most common injuries are invisible on X-rays and undetectable in the first few hours.</p>
+
+          <div class="inline-cards fade-up">
+            <div class="inline-card">
+              <span class="ic-icon">⚡</span>
+              <h4>Whiplash</h4>
+              <p>The most common crash injury. Your head snaps forward and back before any muscle can respond. Symptoms — stiffness, pain, headaches — often peak 2–3 days after impact.</p>
+            </div>
+            <div class="inline-card">
+              <span class="ic-icon">🧠</span>
+              <h4>Concussion / mTBI</h4>
+              <p>You don't need to hit your head or lose consciousness to get a concussion. Fogginess, light sensitivity, irritability, and sleep disruption are warning signs. Seek care the same day.</p>
+            </div>
+            <div class="inline-card">
+              <span class="ic-icon">🔗</span>
+              <h4>Soft Tissue Damage</h4>
+              <p>Muscles, ligaments, and tendons can be strained or torn. These injuries don't appear on standard X-rays and are often the source of long-term post-crash pain.</p>
+            </div>
+            <div class="inline-card">
+              <span class="ic-icon">💿</span>
+              <h4>Disc Herniation</h4>
+              <p>The discs between your vertebrae can bulge or rupture under crash forces. This can cause radiating pain, numbness, or tingling down the arms or legs.</p>
+            </div>
+            <div class="inline-card">
+              <span class="ic-icon">😰</span>
+              <h4>Trauma &amp; PTSD</h4>
+              <p>Crashes are traumatic events. Anxiety, hypervigilance while driving, sleep issues, and flashbacks are legitimate medical symptoms — not weakness. They deserve treatment.</p>
+            </div>
+            <div class="inline-card">
+              <span class="ic-icon">💤</span>
+              <h4>Adrenaline Masking</h4>
+              <p>Your body releases adrenaline during any stressful event. It suppresses pain signals for hours. Many people leave crash scenes feeling completely fine — and then can barely move the next morning.</p>
+            </div>
+          </div>
+
+          <div class="callout danger fade-up">
+            <p><strong>Go to the ER immediately if you experience:</strong> numbness or tingling in arms or legs, loss of consciousness (even briefly), severe head pain or blurred vision, inability to move your neck, or loss of bladder/bowel control. These are not "wait and see" symptoms.</p>
+          </div>
+
+          <h3 style="font-size: 1.1rem; margin: 2rem 0 0.75rem; color: var(--purple-deep);">Why imaging often misses things early on</h3>
+          <p>X-rays show bones. MRIs show soft tissue. But even MRIs taken too soon after a crash can miss injuries that won't fully manifest for days or weeks. This is why early clinical evaluation — by a provider trained in crash injuries — is so important. They know what to look for before imaging even confirms it.</p>
+
+          <p>If your initial imaging comes back "normal," that doesn't mean nothing is wrong. It means you may need more time, more specific imaging, or a provider who understands the full spectrum of crash-related injury.</p>
+        </section>
+
+        <!-- ══ CHAPTER 4 ══ -->
+        <section class="guide-chapter" id="ch4">
+          <div class="chapter-eyebrow">
+            <div class="chapter-num">4</div>
+            <div class="chapter-label">What to Avoid</div>
+          </div>
+          <h2>The Most Common Mistakes After a Crash</h2>
+
+          <p>Most people only go through this once. That means most people make at least one of these mistakes — not because they're careless, but because nobody told them. This chapter exists to change that.</p>
+
+          <div class="guide-two-col fade-up">
+            <div class="guide-col-box">
+              <h4 style="color: #c62828;">🚩 Mistakes that hurt your health</h4>
+              <ul>
+                <li>Waiting to seek care because you feel fine</li>
+                <li>Stopping treatment when pain decreases (before you're actually healed)</li>
+                <li>Ignoring mental and emotional symptoms</li>
+                <li>Not following your provider's plan between visits</li>
+                <li>Assuming "minor crash = minor injury"</li>
+              </ul>
+            </div>
+            <div class="guide-col-box">
+              <h4 style="color: #c62828;">🚩 Mistakes that hurt your claim</h4>
+              <ul>
+                <li>Saying "I'm fine" at the scene</li>
+                <li>Giving a recorded statement to the other insurer</li>
+                <li>Posting about the crash on social media</li>
+                <li>Waiting more than a week to begin treatment</li>
+                <li>Accepting a quick settlement before you know your full diagnosis</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="guide-timeline fade-up">
+            <div class="guide-tl-item">
+              <div class="guide-tl-dot" style="background: #c62828;"></div>
+              <div class="tl-label">Mistake #1</div>
+              <h4>Accepting a quick settlement</h4>
+              <p>Insurance adjusters sometimes call within days of a crash offering a fast, "easy" settlement. They know you don't yet know the full extent of your injuries. Soft tissue injuries can take weeks to fully manifest. Once you sign, you waive your right to additional compensation — even if you need surgery three months later. Always wait until you have a complete picture of your medical needs before accepting any offer.</p>
+            </div>
+            <div class="guide-tl-item">
+              <div class="guide-tl-dot" style="background: #c62828;"></div>
+              <div class="tl-label">Mistake #2</div>
+              <h4>Stopping treatment when pain improves</h4>
+              <p>Feeling better is not the same as being healed. Soft tissue injuries that aren't fully rehabilitated often return — sometimes worse than before. A complete recovery involves restoring full range of motion, strength, and function — not just waiting until it stops hurting. Work with your provider to determine when you're actually done, not just when you feel okay.</p>
+            </div>
+            <div class="guide-tl-item">
+              <div class="guide-tl-dot" style="background: #c62828;"></div>
+              <div class="tl-label">Mistake #3</div>
+              <h4>Not coordinating your care team</h4>
+              <p>Many crash victims see multiple providers who never talk to each other. Your chiropractor doesn't know what your PCP ordered. Your PCP doesn't know what your physical therapist found. This creates gaps in care, duplicate work, and a fragmented medical record. Find a provider who takes the lead in coordinating your full team — or at minimum, make sure your records follow you everywhere you go.</p>
+            </div>
+          </div>
+
+          <div class="callout fade-up">
+            <p><strong>The 14-day rule:</strong> In Washington State, beginning treatment within 14 days of a crash significantly strengthens your insurance claim. The more time that passes between the crash and your first appointment, the harder it becomes to connect your injuries to the accident.</p>
+          </div>
+        </section>
+
+        <!-- ══ CHAPTER 5 ══ -->
+        <section class="guide-chapter" id="ch5">
+          <div class="chapter-eyebrow">
+            <div class="chapter-num">5</div>
+            <div class="chapter-label">Your Care Team</div>
+          </div>
+          <h2>The Quarterback Model: Building Your Recovery Team</h2>
+
+          <p>The most effective recovery after an auto accident isn't a single provider doing everything — it's a coordinated team. Think of your care like a sports team: you need a quarterback who calls the plays and makes sure everyone is working toward the same goal.</p>
+
+          <p>Your quarterback is your primary treating provider. They coordinate imaging, referrals, and communication between everyone else involved in your care.</p>
+
+          <div class="guide-diagram fade-up">
+            <svg width="100%" viewBox="0 0 560 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <marker id="g5arr" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto">
+                  <path d="M0,0 L0,6 L7,3 z" fill="#7b68c8"/>
+                </marker>
+              </defs>
+              <!-- Center quarterback -->
+              <circle cx="280" cy="155" r="46" fill="#5440a4" stroke="#3b2a6e" stroke-width="2"/>
+              <text x="280" y="143" text-anchor="middle" font-size="22">🏈</text>
+              <text x="280" y="162" text-anchor="middle" font-family="Lora,serif" font-size="12" font-weight="700" fill="white">Quarterback</text>
+              <text x="280" y="178" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9.5" fill="rgba(255,255,255,0.8)">Primary Provider</text>
+
+              <!-- Spokes + outer boxes -->
+              <!-- Top: Specialist -->
+              <path d="M280 109 L280 82" stroke="#c8bfee" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#g5arr)"/>
+              <rect x="216" y="18" width="128" height="62" rx="10" fill="white" stroke="#c8bfee" stroke-width="1.5" stroke-dasharray="5 3"/>
+              <text x="280" y="42" text-anchor="middle" font-size="16">🔬</text>
+              <text x="280" y="58" text-anchor="middle" font-family="Lora,serif" font-size="10" font-weight="600" fill="#3b2a6e">Specialists</text>
+              <text x="280" y="72" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="8.5" fill="#9b94b8">Neuro, ortho, pain mgmt</text>
+
+              <!-- Right: Physical Therapist -->
+              <path d="M326 155 L366 155" stroke="#c8bfee" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#g5arr)"/>
+              <rect x="368" y="108" width="128" height="62" rx="10" fill="white" stroke="#c8bfee" stroke-width="1.5" stroke-dasharray="5 3"/>
+              <text x="432" y="132" text-anchor="middle" font-size="16">🏃</text>
+              <text x="432" y="149" text-anchor="middle" font-family="Lora,serif" font-size="10" font-weight="600" fill="#3b2a6e">Physical Therapist</text>
+              <text x="432" y="163" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="8.5" fill="#9b94b8">Strength &amp; function</text>
+
+              <!-- Bottom-right: Mental health -->
+              <path d="M308 192 L332 230" stroke="#c8bfee" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#g5arr)"/>
+              <rect x="300" y="236" width="128" height="62" rx="10" fill="white" stroke="#c8bfee" stroke-width="1.5" stroke-dasharray="5 3"/>
+              <text x="364" y="260" text-anchor="middle" font-size="16">🧠</text>
+              <text x="364" y="277" text-anchor="middle" font-family="Lora,serif" font-size="10" font-weight="600" fill="#3b2a6e">Mental Health</text>
+              <text x="364" y="291" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="8.5" fill="#9b94b8">Trauma &amp; PTSD support</text>
+
+              <!-- Bottom-left: Attorney -->
+              <path d="M251 192 L216 231" stroke="#c8bfee" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#g5arr)"/>
+              <rect x="130" y="236" width="128" height="62" rx="10" fill="white" stroke="#c8bfee" stroke-width="1.5" stroke-dasharray="5 3"/>
+              <text x="194" y="260" text-anchor="middle" font-size="16">⚖️</text>
+              <text x="194" y="277" text-anchor="middle" font-family="Lora,serif" font-size="10" font-weight="600" fill="#3b2a6e">PI Attorney</text>
+              <text x="194" y="291" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="8.5" fill="#9b94b8">Optional for major claims</text>
+
+              <!-- Left: Massage -->
+              <path d="M234 155 L194 155" stroke="#c8bfee" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#g5arr)"/>
+              <rect x="64" y="108" width="128" height="62" rx="10" fill="white" stroke="#c8bfee" stroke-width="1.5" stroke-dasharray="5 3"/>
+              <text x="128" y="132" text-anchor="middle" font-size="16">💆</text>
+              <text x="128" y="149" text-anchor="middle" font-family="Lora,serif" font-size="10" font-weight="600" fill="#3b2a6e">Massage Therapy</text>
+              <text x="128" y="163" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="8.5" fill="#9b94b8">Soft tissue relief</text>
+            </svg>
+            <p class="diagram-caption">Your quarterback coordinates the whole team. Everyone else plays their position.</p>
+          </div>
+
+          <h3 style="font-size: 1.1rem; margin: 2rem 0 0.75rem; color: var(--purple-deep);">What the quarterback does</h3>
+          <ul class="guide-checklist fade-up">
+            <li><strong>Conducts the initial injury evaluation</strong> — determines what was injured and to what degree.</li>
+            <li><strong>Orders imaging</strong> when needed — X-rays, MRIs, or CT scans to confirm clinical findings.</li>
+            <li><strong>Sends referrals</strong> to specialists, physical therapists, or mental health providers as needed.</li>
+            <li><strong>Coordinates your medical record</strong> — makes sure all providers share notes and treatment plans.</li>
+            <li><strong>Communicates with your insurance</strong> — submits PIP billing and treatment justifications directly.</li>
+            <li><strong>Tracks your recovery progress</strong> — adjusts your treatment plan as you improve or plateau.</li>
+          </ul>
+
+          <div class="callout success fade-up">
+            <p><strong>You don't need to manage this yourself.</strong> A good primary provider handles the coordination. Your job is to show up, communicate honestly about your symptoms, and follow the plan.</p>
+          </div>
+        </section>
+
+        <!-- ══ CHAPTER 6 ══ -->
+        <section class="guide-chapter" id="ch6">
+          <div class="chapter-eyebrow">
+            <div class="chapter-num">6</div>
+            <div class="chapter-label">Washington State Insurance</div>
+          </div>
+          <h2>How Insurance Actually Works After a Crash in WA</h2>
+
+          <p>Washington State uses a fault-based insurance system — but it also requires every auto policy to include Personal Injury Protection (PIP). Understanding how these interact is the single most important financial lesson after a crash.</p>
+
+          <div class="guide-diagram fade-up">
+            <svg width="100%" viewBox="0 0 620 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <marker id="g6arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+                  <path d="M0,0 L0,6 L8,3 z" fill="#7b68c8"/>
+                </marker>
+              </defs>
+              <!-- Crash -->
+              <rect x="10" y="60" width="90" height="80" rx="10" fill="#fdecea" stroke="#ef9a9a" stroke-width="1.5" stroke-dasharray="5 3"/>
+              <text x="55" y="90" text-anchor="middle" font-size="20">💥</text>
+              <text x="55" y="111" text-anchor="middle" font-family="Lora,serif" font-size="11" font-weight="600" fill="#c62828">Crash</text>
+              <text x="55" y="126" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="#9b94b8">Happens</text>
+              <!-- Arrow -->
+              <path d="M102 100 L118 100" stroke="#7b68c8" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#g6arr)"/>
+              <!-- PIP -->
+              <rect x="120" y="30" width="120" height="140" rx="10" fill="white" stroke="#c8bfee" stroke-width="1.5" stroke-dasharray="5 3"/>
+              <text x="180" y="65" text-anchor="middle" font-size="20">🛡️</text>
+              <text x="180" y="86" text-anchor="middle" font-family="Lora,serif" font-size="11" font-weight="600" fill="#3b2a6e">Your PIP</text>
+              <text x="180" y="103" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="8.5" fill="#5440a4">$10K minimum</text>
+              <text x="180" y="117" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="8.5" fill="#9b94b8">Pays regardless</text>
+              <text x="180" y="130" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="8.5" fill="#9b94b8">of fault</text>
+              <text x="180" y="149" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="8" fill="#2e7d32">Use this FIRST</text>
+              <!-- Arrow -->
+              <path d="M242 100 L258 100" stroke="#7b68c8" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#g6arr)"/>
+              <!-- Care -->
+              <rect x="260" y="60" width="90" height="80" rx="10" fill="#edf7ed" stroke="#a5d6a7" stroke-width="1.5" stroke-dasharray="5 3"/>
+              <text x="305" y="90" text-anchor="middle" font-size="20">🏥</text>
+              <text x="305" y="111" text-anchor="middle" font-family="Lora,serif" font-size="11" font-weight="600" fill="#2e7d32">Your Care</text>
+              <text x="305" y="126" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="#9b94b8">PIP billed direct</text>
+              <!-- Arrow -->
+              <path d="M352 100 L368 100" stroke="#7b68c8" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#g6arr)"/>
+              <!-- Fault determination -->
+              <rect x="370" y="60" width="100" height="80" rx="10" fill="white" stroke="#c8bfee" stroke-width="1.5" stroke-dasharray="5 3"/>
+              <text x="420" y="90" text-anchor="middle" font-size="20">⚖️</text>
+              <text x="420" y="111" text-anchor="middle" font-family="Lora,serif" font-size="10.5" font-weight="600" fill="#3b2a6e">Fault Determined</text>
+              <text x="420" y="126" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="8.5" fill="#9b94b8">Takes time</text>
+              <!-- Arrow -->
+              <path d="M472 100 L488 100" stroke="#7b68c8" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#g6arr)"/>
+              <!-- At fault claim -->
+              <rect x="490" y="30" width="120" height="140" rx="10" fill="white" stroke="#c8bfee" stroke-width="1.5" stroke-dasharray="5 3"/>
+              <text x="550" y="65" text-anchor="middle" font-size="20">💰</text>
+              <text x="550" y="86" text-anchor="middle" font-family="Lora,serif" font-size="10.5" font-weight="600" fill="#3b2a6e">At-Fault Claim</text>
+              <text x="550" y="103" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="8.5" fill="#9b94b8">Other driver's</text>
+              <text x="550" y="117" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="8.5" fill="#9b94b8">liability insurance</text>
+              <text x="550" y="132" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="8.5" fill="#9b94b8">Pain &amp; suffering</text>
+              <text x="550" y="147" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="8.5" fill="#9b94b8">+ additional losses</text>
+            </svg>
+            <p class="diagram-caption">PIP pays first, fast, and without fault disputes. The at-fault claim comes later and covers the rest.</p>
+          </div>
+
+          <h3 style="font-size: 1.1rem; margin: 2rem 0 0.75rem; color: var(--purple-deep);">PIP: what it covers, what it doesn't</h3>
+
+          <div class="guide-two-col fade-up">
+            <div class="guide-col-box">
+              <h4 style="color: #2e7d32;">✅ PIP covers</h4>
+              <ul>
+                <li>Medical and chiropractic treatment</li>
+                <li>Physical therapy and massage</li>
+                <li>Mental health counseling</li>
+                <li>Lost wages (if you can't work)</li>
+                <li>Prescriptions related to the crash</li>
+                <li>Funeral expenses (in severe cases)</li>
+              </ul>
+            </div>
+            <div class="guide-col-box">
+              <h4 style="color: #c62828;">🚩 PIP does NOT cover</h4>
+              <ul>
+                <li>Vehicle repair or replacement</li>
+                <li>Pain and suffering damages</li>
+                <li>Future income loss beyond the PIP limit</li>
+                <li>Damage to others' property</li>
+                <li>Claims beyond the policy limit ($10K minimum)</li>
+              </ul>
+            </div>
+          </div>
+
+          <ul class="guide-checklist fade-up">
+            <li><strong>Use your PIP first</strong> — it's faster than health insurance and doesn't require proving fault. Your rates cannot be raised simply for using the PIP coverage you paid for.</li>
+            <li><strong>You still have a right to pursue the at-fault driver</strong> — PIP doesn't prevent you from filing a separate claim against the other driver's liability insurance for damages beyond your PIP limit.</li>
+            <li><strong>Washington's statute of limitations is 3 years</strong> — you have 3 years to file a personal injury lawsuit. But don't wait; the sooner you start, the better your evidence.</li>
+            <li><strong>You choose your own providers</strong> — no insurance adjuster can force you to see a specific doctor. This right belongs to you by Washington State law.</li>
+            <li><strong>Don't give a recorded statement</strong> to the at-fault driver's insurance without consulting an attorney first. What you say can and will be used to minimize your payout.</li>
+          </ul>
+
+          <div class="callout fade-up">
+            <p><strong>Considering a PI attorney?</strong> For significant injuries, a personal injury attorney is worth a consultation. Most work on contingency — zero upfront cost, they only get paid when you do. They protect your claim value and handle adjuster pressure so you can focus on healing.</p>
+          </div>
+        </section>
+
+        <!-- ══ CHAPTER 7 ══ -->
+        <section class="guide-chapter" id="ch7">
+          <div class="chapter-eyebrow">
+            <div class="chapter-num">7</div>
+            <div class="chapter-label">Recovery</div>
+          </div>
+          <h2>What Recovery Actually Looks Like</h2>
+
+          <p>Recovery isn't a straight line. There will be days where you feel almost normal and days where old symptoms flare. Both are part of the process. Understanding the recovery arc helps you stay the course instead of stopping too soon — or worrying unnecessarily about a bad day.</p>
+
+          <div class="guide-diagram fade-up">
+            <svg width="100%" viewBox="0 0 580 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <marker id="g7arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+                  <path d="M0,0 L0,6 L8,3 z" fill="#7b68c8"/>
+                </marker>
+              </defs>
+              <!-- Pre-crash status -->
+              <rect x="10" y="14" width="120" height="60" rx="10" fill="#edf7ed" stroke="#a5d6a7" stroke-width="1.5" stroke-dasharray="5 3"/>
+              <text x="70" y="38" text-anchor="middle" font-family="Lora,serif" font-size="10.5" font-weight="600" fill="#2e7d32">Pre-Injury Status</text>
+              <text x="70" y="55" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="#9b94b8">How you felt before</text>
+              <text x="70" y="68" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="#9b94b8">the crash</text>
+              <!-- Arrow down -->
+              <path d="M70 76 L70 104" stroke="#c62828" stroke-width="1.5" marker-end="url(#g7arr)"/>
+              <!-- Crash -->
+              <rect x="10" y="106" width="120" height="50" rx="10" fill="#fdecea" stroke="#ef9a9a" stroke-width="1.5" stroke-dasharray="5 3"/>
+              <text x="70" y="127" text-anchor="middle" font-family="Lora,serif" font-size="10.5" font-weight="600" fill="#c62828">Crash + Symptoms</text>
+              <text x="70" y="145" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="#9b94b8">Injury, pain, limitation</text>
+              <!-- Arrow right to fork -->
+              <path d="M132 131 L170 131" stroke="#7b68c8" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#g7arr)"/>
+              <!-- Fork label -->
+              <text x="185" y="126" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="8" fill="#9b94b8">Care</text>
+              <!-- Fork up -->
+              <path d="M185 131 L185 68 L225 68" stroke="#2e7d32" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#g7arr)"/>
+              <!-- Full recovery -->
+              <rect x="226" y="40" width="160" height="56" rx="10" fill="#edf7ed" stroke="#a5d6a7" stroke-width="1.5" stroke-dasharray="5 3"/>
+              <text x="306" y="62" text-anchor="middle" font-size="16">🌱</text>
+              <text x="306" y="80" text-anchor="middle" font-family="Lora,serif" font-size="11" font-weight="600" fill="#2e7d32">Full Recovery</text>
+              <text x="306" y="94" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="8.5" fill="#9b94b8">Return to pre-injury status</text>
+              <!-- Arrow from full recovery -->
+              <path d="M388 68 L430 68" stroke="#7b68c8" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#g7arr)"/>
+              <rect x="432" y="40" width="130" height="56" rx="10" fill="white" stroke="#c8bfee" stroke-width="1.5" stroke-dasharray="5 3"/>
+              <text x="497" y="64" text-anchor="middle" font-family="Lora,serif" font-size="10.5" font-weight="600" fill="#3b2a6e">Resume Life</text>
+              <text x="497" y="80" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="8.5" fill="#9b94b8">Work, activity</text>
+              <text x="497" y="93" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="8.5" fill="#9b94b8">normal function</text>
+
+              <!-- Fork straight: MMI -->
+              <path d="M185 131 L185 165 L225 165" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#g7arr)"/>
+              <rect x="226" y="138" width="160" height="56" rx="10" fill="#fff8e1" stroke="#ffcc80" stroke-width="1.5" stroke-dasharray="5 3"/>
+              <text x="306" y="161" text-anchor="middle" font-family="Lora,serif" font-size="10.5" font-weight="600" fill="#b45309">Max Medical Improvement</text>
+              <text x="306" y="177" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="8.5" fill="#9b94b8">Ongoing management</text>
+              <text x="306" y="191" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="8.5" fill="#9b94b8">may be needed</text>
+              <!-- Arrow from MMI -->
+              <path d="M388 165 L430 165" stroke="#7b68c8" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#g7arr)"/>
+              <rect x="432" y="138" width="130" height="56" rx="10" fill="white" stroke="#c8bfee" stroke-width="1.5" stroke-dasharray="5 3"/>
+              <text x="497" y="162" text-anchor="middle" font-family="Lora,serif" font-size="10.5" font-weight="600" fill="#3b2a6e">Adapted Life</text>
+              <text x="497" y="178" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="8.5" fill="#9b94b8">Supported by ongoing</text>
+              <text x="497" y="191" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="8.5" fill="#9b94b8">care as needed</text>
+            </svg>
+            <p class="diagram-caption">Most people reach full recovery. Some reach maximal medical improvement — a stable state that may require ongoing management.</p>
+          </div>
+
+          <h3 style="font-size: 1.1rem; margin: 2rem 0 0.75rem; color: var(--purple-deep);">What "maximal medical improvement" means</h3>
+          <p>MMI is the point where your condition has stabilized and is unlikely to change significantly with further treatment. It doesn't mean you're fully healed — it means you've reached the best recovery your body can achieve for now. For most people with soft tissue injuries, MMI and full recovery are the same thing. For others with more complex injuries, MMI may mean learning to manage symptoms long-term.</p>
+
+          <p>Your attorney, if you have one, will often wait until you reach MMI before settling your claim — because that's when the full picture of your medical needs and costs is clear.</p>
+
+          <div class="callout fade-up">
+            <p><strong>Normal parts of recovery:</strong> occasional flare-ups, slow weeks, frustration, and fatigue. All of these are expected. The key is staying consistent with your treatment plan and communicating with your provider when things change.</p>
+          </div>
+        </section>
+
+        <!-- ══ CHAPTER 8 ══ -->
+        <section class="guide-chapter" id="ch8">
+          <div class="chapter-eyebrow">
+            <div class="chapter-num">8</div>
+            <div class="chapter-label">Finding the Right Provider</div>
+          </div>
+          <h2>How to Choose Who Treats You</h2>
+
+          <p>You have the legal right in Washington to choose your own health care providers after a crash. Insurance companies and employers cannot direct your care. Use this right thoughtfully — the quality of your recovery depends significantly on the quality of your providers.</p>
+
+          <div class="guide-two-col fade-up">
+            <div class="guide-col-box">
+              <h4 style="color: #2e7d32;">✅ Green flags</h4>
+              <ul>
+                <li>Specific experience with auto accident injuries</li>
+                <li>Willing to bill PIP directly</li>
+                <li>Gives you a written treatment plan with timelines</li>
+                <li>Takes all your symptoms seriously</li>
+                <li>Coordinates with other providers on your team</li>
+                <li>Keeps thorough documentation</li>
+                <li>Welcomes your questions and explains everything</li>
+              </ul>
+            </div>
+            <div class="guide-col-box">
+              <h4 style="color: #c62828;">🚩 Red flags</h4>
+              <ul>
+                <li>Promises a specific settlement amount</li>
+                <li>Pushes excessive or unexplained treatments</li>
+                <li>Won't give you copies of your own records</li>
+                <li>Discourages second opinions</li>
+                <li>Doesn't listen to how you feel day to day</li>
+                <li>Pressure to continue treatment when you feel fine</li>
+                <li>Vague explanations of why a treatment is needed</li>
+              </ul>
+            </div>
+          </div>
+
+          <h3 style="font-size: 1.1rem; margin: 2rem 0 0.75rem; color: var(--purple-deep);">Questions to ask at your first appointment</h3>
+          <ul class="guide-checklist fade-up">
+            <li>"How many auto accident patients do you treat each year?"</li>
+            <li>"Do you accept PIP billing directly?"</li>
+            <li>"What does a typical treatment plan look like for symptoms like mine?"</li>
+            <li>"Will you coordinate with my other providers?"</li>
+            <li>"How will you track my progress over time?"</li>
+            <li>"What imaging or referrals do you anticipate I'll need?"</li>
+            <li>"At what point would you refer me to a specialist?"</li>
+          </ul>
+
+          <div class="callout fade-up">
+            <p><strong>Trust your instincts.</strong> A good provider makes you feel heard and gives you clear answers. If something doesn't feel right after your first visit, it's okay to seek care elsewhere. You are not locked in to any provider.</p>
+          </div>
+        </section>
+
+        <!-- ══ CHAPTER 9 ══ -->
+        <section class="guide-chapter" id="ch9">
+          <div class="chapter-eyebrow">
+            <div class="chapter-num">9</div>
+            <div class="chapter-label">Resources</div>
+          </div>
+          <h2>Resources for Washington State Crash Survivors</h2>
+
+          <p>You don't have to navigate this alone. The following resources are available to Washington State residents dealing with auto accident injuries, insurance claims, and recovery.</p>
+
+          <div class="resources-grid fade-up">
+
+            <div class="resource-card">
+              <div class="rc-type">Insurance · Washington State</div>
+              <h4>WA Office of the Insurance Commissioner</h4>
+              <p>File a complaint, look up a licensed provider, or learn about your rights as a Washington policyholder.</p>
+              <a href="https://www.insurance.wa.gov" class="rc-link" target="_blank" rel="noopener">insurance.wa.gov →</a>
+            </div>
+
+            <div class="resource-card">
+              <div class="rc-type">Legal · Referral</div>
+              <h4>Washington State Bar Association</h4>
+              <p>Find a licensed personal injury attorney in Washington State. The lawyer referral service connects you with qualified local counsel.</p>
+              <a href="https://www.wsba.org" class="rc-link" target="_blank" rel="noopener">wsba.org →</a>
+            </div>
+
+            <div class="resource-card">
+              <div class="rc-type">Crash Data · Washington State</div>
+              <h4>WA State Dept. of Transportation</h4>
+              <p>View crash data, road safety reports, and traffic information across Washington State.</p>
+              <a href="https://www.wsdot.wa.gov" class="rc-link" target="_blank" rel="noopener">wsdot.wa.gov →</a>
+            </div>
+
+            <div class="resource-card">
+              <div class="rc-type">Health · Mental Health</div>
+              <h4>SAMHSA National Helpline</h4>
+              <p>Free, confidential, 24/7 mental health and substance use referrals. Crashes are traumatic. Mental health care is legitimate crash-related care.</p>
+              <a href="https://www.samhsa.gov/find-help/national-helpline" class="rc-link" target="_blank" rel="noopener">1-800-662-4357 →</a>
+            </div>
+
+            <div class="resource-card">
+              <div class="rc-type">Legal Aid · Low Income</div>
+              <h4>Northwest Justice Project</h4>
+              <p>Free civil legal assistance for low-income Washington residents, including help with insurance disputes and personal injury claims.</p>
+              <a href="https://www.nwjustice.org" class="rc-link" target="_blank" rel="noopener">nwjustice.org →</a>
+            </div>
+
+            <div class="resource-card">
+              <div class="rc-type">Recovery · Toolkit</div>
+              <h4>This Site</h4>
+              <p>You're already here. Share this guide with anyone you know who's been in a crash. It's free, open, and built by health care professionals who've seen what bad information costs people.</p>
+              <a href="start-here.html" class="rc-link">Read the Start Here guide →</a>
+            </div>
+
+          </div>
+
+          <div class="callout success fade-up" style="margin-top: 2.5rem;">
+            <p><strong>One last thing:</strong> Recovery is not just physical. Give yourself permission to take it seriously — to rest, to ask for help, and to advocate for yourself at every step. The system isn't always easy to navigate, but you have more rights and more options than you probably know. That's why this guide exists.</p>
+          </div>
+
+        </section>
+        <!-- End chapters -->
+
+      </main>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid" style="grid-template-columns: 2fr 1fr 1fr;">
+        <div class="footer-brand">
+          <div class="nav-logo">Your<span>Org</span></div>
+          <p>Free, open information about auto accident care in Washington State — from health care professionals who've seen it firsthand.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Pages</h5>
+          <ul>
+            <li><a href="start-here.html">Start Here</a></li>
+            <li><a href="guide.html">Full Guide</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Disclaimer</h5>
+          <ul>
+            <li><a href="#">Not medical advice</a></li>
+            <li><a href="#">Not legal advice</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 YourOrg. All rights reserved.</span>
+        <span>Free &amp; open · Washington State</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script>
+    // Active TOC link on scroll
+    const chapters = document.querySelectorAll('.guide-chapter');
+    const tocLinks = document.querySelectorAll('.toc-list a');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          tocLinks.forEach(link => link.classList.remove('active'));
+          const id = '#' + entry.target.id;
+          const active = document.querySelector(`.toc-list a[href="${id}"]`);
+          if (active) active.classList.add('active');
+        }
+      });
+    }, { threshold: 0.25 });
+    chapters.forEach(ch => observer.observe(ch));
+  </script>
+</body>
+</html>
