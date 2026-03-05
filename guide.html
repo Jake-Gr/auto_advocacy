@@ -88,32 +88,50 @@
       border-bottom: none;
     }
 
-    .chapter-eyebrow {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      margin-bottom: 1rem;
+    /* ── Chapter Header Banner ── */
+    .chapter-header {
+      margin: 0 0 2.5rem;
+      padding: 2.5rem 2.75rem 2.25rem;
+      background: var(--purple-deep);
+      border-radius: var(--radius-lg);
+      position: relative;
+      overflow: hidden;
     }
-    .chapter-num {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 36px;
-      height: 36px;
-      background: var(--purple-anchor);
-      color: white;
-      border-radius: 50%;
+    .chapter-header::before {
+      content: attr(data-chapter);
+      position: absolute;
+      top: -0.75rem;
+      right: 1.5rem;
+      font-size: 8rem;
       font-family: var(--font-display);
-      font-size: 0.9rem;
-      font-weight: 700;
-      flex-shrink: 0;
+      font-weight: 800;
+      color: rgba(255,255,255,0.055);
+      line-height: 1;
+      pointer-events: none;
+      user-select: none;
+      letter-spacing: -0.02em;
     }
-    .chapter-label {
-      font-size: 0.72rem;
+    .chapter-kicker {
+      font-size: 0.68rem;
       font-weight: 600;
-      letter-spacing: 0.13em;
+      letter-spacing: 0.18em;
       text-transform: uppercase;
-      color: var(--purple-mid);
+      color: var(--purple-soft);
+      margin-bottom: 1rem;
+      opacity: 0.85;
+    }
+    .chapter-icon {
+      font-size: 3.25rem;
+      display: block;
+      margin-bottom: 0.9rem;
+      line-height: 1;
+    }
+    .chapter-header h2 {
+      font-size: clamp(1.75rem, 3.5vw, 2.5rem) !important;
+      color: white !important;
+      margin-bottom: 0 !important;
+      line-height: 1.2 !important;
+      max-width: none !important;
     }
     .guide-chapter h2 {
       font-size: clamp(1.5rem, 3vw, 2rem);
@@ -436,11 +454,11 @@
 
         <!-- ══ CHAPTER 1 ══ -->
         <section class="guide-chapter" id="ch1">
-          <div class="chapter-eyebrow">
-            <div class="chapter-num">1</div>
-            <div class="chapter-label">Before a Crash</div>
+          <div class="chapter-header" data-chapter="01">
+            <div class="chapter-kicker">Chapter 01 · Before a Crash</div>
+            <span class="chapter-icon">🚗</span>
+            <h2>What You Can Do Before It Ever Happens</h2>
           </div>
-          <h2>What You Can Do Before It Ever Happens</h2>
 
           <p>Most people don't think about crash preparation until they're sitting on the side of the road. But a few minutes of preparation — stored in your glove box or phone — can save you enormous stress in those chaotic first moments.</p>
 
@@ -506,11 +524,11 @@
 
         <!-- ══ CHAPTER 2 ══ -->
         <section class="guide-chapter" id="ch2">
-          <div class="chapter-eyebrow">
-            <div class="chapter-num">2</div>
-            <div class="chapter-label">First 72 Hours</div>
+          <div class="chapter-header" data-chapter="02">
+            <div class="chapter-kicker">Chapter 02 · First 72 Hours</div>
+            <span class="chapter-icon">💥</span>
+            <h2>What to Do Right After the Crash</h2>
           </div>
-          <h2>What to Do Right After the Crash</h2>
 
           <p>The moments and days immediately following a crash are the most critical window — for your health, your documentation, and your insurance claim. Most people either do too little because they feel fine, or freeze because they don't know what comes next.</p>
 
@@ -592,11 +610,11 @@
 
         <!-- ══ CHAPTER 3 ══ -->
         <section class="guide-chapter" id="ch3">
-          <div class="chapter-eyebrow">
-            <div class="chapter-num">3</div>
-            <div class="chapter-label">Understanding Your Body</div>
+          <div class="chapter-header" data-chapter="03">
+            <div class="chapter-kicker">Chapter 03 · Understanding Your Body</div>
+            <span class="chapter-icon">🩹</span>
+            <h2>What's Actually Happening Inside</h2>
           </div>
-          <h2>What's Actually Happening Inside</h2>
 
           <p>Auto accidents subject your body to forces that happen faster than your muscles can react. Even a low-speed collision can cause significant damage to soft tissue — and many of the most common injuries are invisible on X-rays and undetectable in the first few hours.</p>
 
@@ -645,11 +663,11 @@
 
         <!-- ══ CHAPTER 4 ══ -->
         <section class="guide-chapter" id="ch4">
-          <div class="chapter-eyebrow">
-            <div class="chapter-num">4</div>
-            <div class="chapter-label">What to Avoid</div>
+          <div class="chapter-header" data-chapter="04">
+            <div class="chapter-kicker">Chapter 04 · What to Avoid</div>
+            <span class="chapter-icon">⚠️</span>
+            <h2>The Most Common Mistakes After a Crash</h2>
           </div>
-          <h2>The Most Common Mistakes After a Crash</h2>
 
           <p>Most people only go through this once. That means most people make at least one of these mistakes — not because they're careless, but because nobody told them. This chapter exists to change that.</p>
 
@@ -704,11 +722,11 @@
 
         <!-- ══ CHAPTER 5 ══ -->
         <section class="guide-chapter" id="ch5">
-          <div class="chapter-eyebrow">
-            <div class="chapter-num">5</div>
-            <div class="chapter-label">Your Care Team</div>
+          <div class="chapter-header" data-chapter="05">
+            <div class="chapter-kicker">Chapter 05 · Your Care Team</div>
+            <span class="chapter-icon">🏥</span>
+            <h2>The Quarterback Model: Building Your Recovery Team</h2>
           </div>
-          <h2>The Quarterback Model: Building Your Recovery Team</h2>
 
           <p>The most effective recovery after an auto accident isn't a single provider doing everything — it's a coordinated team. Think of your care like a sports team: you need a quarterback who calls the plays and makes sure everyone is working toward the same goal.</p>
 
@@ -783,11 +801,11 @@
 
         <!-- ══ CHAPTER 6 ══ -->
         <section class="guide-chapter" id="ch6">
-          <div class="chapter-eyebrow">
-            <div class="chapter-num">6</div>
-            <div class="chapter-label">Washington State Insurance</div>
+          <div class="chapter-header" data-chapter="06">
+            <div class="chapter-kicker">Chapter 06 · Washington State Insurance</div>
+            <span class="chapter-icon">🛡️</span>
+            <h2>How Insurance Actually Works After a Crash in WA</h2>
           </div>
-          <h2>How Insurance Actually Works After a Crash in WA</h2>
 
           <p>Washington State uses a fault-based insurance system — but it also requires every auto policy to include Personal Injury Protection (PIP). Understanding how these interact is the single most important financial lesson after a crash.</p>
 
@@ -882,11 +900,11 @@
 
         <!-- ══ CHAPTER 7 ══ -->
         <section class="guide-chapter" id="ch7">
-          <div class="chapter-eyebrow">
-            <div class="chapter-num">7</div>
-            <div class="chapter-label">Recovery</div>
+          <div class="chapter-header" data-chapter="07">
+            <div class="chapter-kicker">Chapter 07 · Recovery</div>
+            <span class="chapter-icon">🌿</span>
+            <h2>What Recovery Actually Looks Like</h2>
           </div>
-          <h2>What Recovery Actually Looks Like</h2>
 
           <p>Recovery isn't a straight line. There will be days where you feel almost normal and days where old symptoms flare. Both are part of the process. Understanding the recovery arc helps you stay the course instead of stopping too soon — or worrying unnecessarily about a bad day.</p>
 
@@ -954,11 +972,11 @@
 
         <!-- ══ CHAPTER 8 ══ -->
         <section class="guide-chapter" id="ch8">
-          <div class="chapter-eyebrow">
-            <div class="chapter-num">8</div>
-            <div class="chapter-label">Finding the Right Provider</div>
+          <div class="chapter-header" data-chapter="08">
+            <div class="chapter-kicker">Chapter 08 · Finding the Right Provider</div>
+            <span class="chapter-icon">🔍</span>
+            <h2>How to Choose Who Treats You</h2>
           </div>
-          <h2>How to Choose Who Treats You</h2>
 
           <p>You have the legal right in Washington to choose your own health care providers after a crash. Insurance companies and employers cannot direct your care. Use this right thoughtfully — the quality of your recovery depends significantly on the quality of your providers.</p>
 
@@ -1007,11 +1025,11 @@
 
         <!-- ══ CHAPTER 9 ══ -->
         <section class="guide-chapter" id="ch9">
-          <div class="chapter-eyebrow">
-            <div class="chapter-num">9</div>
-            <div class="chapter-label">Resources</div>
+          <div class="chapter-header" data-chapter="09">
+            <div class="chapter-kicker">Chapter 09 · Resources</div>
+            <span class="chapter-icon">🏁</span>
+            <h2>Resources for Washington State Crash Survivors</h2>
           </div>
-          <h2>Resources for Washington State Crash Survivors</h2>
 
           <p>You don't have to navigate this alone. The following resources are available to Washington State residents dealing with auto accident injuries, insurance claims, and recovery.</p>
 
