@@ -179,6 +179,13 @@ em { font-family: var(--font-display); font-style: italic; }
   pointer-events: none;
 }
 
+.hero-logo {
+  height: 120px;
+  width: auto;
+  display: block;
+  margin: 0 auto 1.75rem;
+}
+
 .hero-cozy .hero-eyebrow {
   display: inline-block;
   font-size: 0.8rem;
