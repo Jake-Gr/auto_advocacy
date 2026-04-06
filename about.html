@@ -3,20 +3,264 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us — AIRA</title>
-  <meta name="description" content="Learn about AIRA's mission, values, and the team behind our advocacy work.">
+  <title>About AIRA — Auto Injury Recovery Advocates</title>
+  <meta name="description" content="AIRA was built because of what we kept seeing in the clinic. Free guidance for Washington State auto accident survivors.">
+  <meta property="og:title" content="About AIRA — Auto Injury Recovery Advocates">
+  <meta property="og:description" content="AIRA exists because people deserve accurate information when they're hurt and don't know what to do.">
+  <meta property="og:type" content="website">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="images/favicon-180.png">
+
+  <style>
+    /* ── About Page ── */
+
+    .pull-quote-section {
+      background: var(--purple-deep);
+      padding: 5rem 1.5rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .pull-quote-section::before {
+      content: '\201C';
+      position: absolute;
+      top: -2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: var(--font-display);
+      font-size: 20rem;
+      color: rgba(255,255,255,0.04);
+      line-height: 1;
+      pointer-events: none;
+    }
+    .pull-quote-text {
+      font-family: var(--font-display);
+      font-size: clamp(1.6rem, 4vw, 2.6rem);
+      font-style: italic;
+      color: #ffffff;
+      max-width: 720px;
+      margin: 0 auto;
+      line-height: 1.45;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Journey path */
+    .journey-path {
+      display: flex;
+      align-items: flex-start;
+      margin: 2rem 0;
+      flex-wrap: wrap;
+      gap: 0;
+    }
+    .journey-step {
+      flex: 1;
+      min-width: 130px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .journey-step:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      top: 21px;
+      right: -50%;
+      width: 100%;
+      border-top: 2px dotted var(--purple-soft);
+      z-index: 0;
+    }
+    .journey-dot {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      margin-bottom: 0.6rem;
+      position: relative;
+      z-index: 1;
+      flex-shrink: 0;
+    }
+    .dot-problem  { background: #fef3f2; border: 2px solid #fca5a5; }
+    .dot-aira     { background: var(--purple-blush); border: 2px solid var(--purple-soft); }
+    .dot-bad      { background: #fef3f2; border: 2px solid #fca5a5; }
+    .dot-good     { background: #f0fdf4; border: 2px solid #86efac; }
+    .journey-label {
+      font-size: 0.78rem;
+      font-weight: 500;
+      color: var(--text-dark);
+      line-height: 1.3;
+    }
+    .journey-sub {
+      font-size: 0.7rem;
+      color: var(--text-light);
+      line-height: 1.3;
+      margin-top: 0.2rem;
+      font-style: italic;
+    }
+    .path-divider {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+    .path-divider-line { flex: 1; border-top: 1px solid var(--border-soft); }
+    .path-divider-label {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--purple-anchor);
+      white-space: nowrap;
+    }
+
+    /* WA callout */
+    .wa-callout {
+      background: var(--purple-deep);
+      color: white;
+      border-radius: var(--radius-md);
+      padding: 1.5rem 2rem;
+      display: flex;
+      gap: 1.25rem;
+      align-items: flex-start;
+      margin-top: 2.5rem;
+    }
+    .wa-callout .icon { font-size: 1.6rem; flex-shrink: 0; margin-top: 0.1rem; }
+    .wa-callout p { color: rgba(255,255,255,0.85); margin: 0; font-size: 0.95rem; }
+    .wa-callout strong { color: #ffffff; }
+
+    /* Expert grid */
+    .expert-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 0.75rem;
+      margin-top: 2rem;
+    }
+    .expert-card {
+      background: var(--white-pure);
+      border: 1px solid var(--border-soft);
+      border-radius: var(--radius-md);
+      padding: 1rem 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .expert-card:hover {
+      box-shadow: 0 4px 16px rgba(84,64,164,0.1);
+      transform: translateY(-2px);
+    }
+    .expert-icon {
+      font-size: 1.3rem;
+      width: 38px;
+      height: 38px;
+      background: var(--purple-blush);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .expert-label {
+      font-weight: 500;
+      font-size: 0.9rem;
+      color: var(--text-dark);
+    }
+
+    /* No-agenda strip */
+    .no-agenda {
+      display: flex;
+      gap: 1px;
+      background: var(--border-soft);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      margin-top: 2.5rem;
+    }
+    .no-agenda-item {
+      flex: 1;
+      background: var(--white-pure);
+      padding: 1.25rem;
+      text-align: center;
+    }
+    .no-agenda-item .marker { font-size: 1.2rem; margin-bottom: 0.35rem; }
+    .no-agenda-item p { font-size: 0.85rem; margin: 0; color: var(--text-mid); }
+
+    /* Founder section */
+    .founder-section {
+      background: linear-gradient(160deg, var(--purple-blush) 0%, var(--cream) 60%);
+      padding: 5rem 1.5rem;
+    }
+    .founder-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+    .founder-photo-frame {
+      position: relative;
+      width: 240px;
+      height: 240px;
+      margin: 20px auto 0;
+    }
+    .founder-photo-frame svg.deco {
+      position: absolute;
+      top: -20px;
+      left: -20px;
+      width: 280px;
+      height: 280px;
+      pointer-events: none;
+    }
+    .founder-photo {
+      width: 240px;
+      height: 240px;
+      object-fit: cover;
+      object-position: top center;
+      border-radius: 50%;
+      border: 4px solid var(--purple-soft);
+      position: relative;
+      z-index: 1;
+      display: block;
+    }
+    .founder-name-block {
+      text-align: center;
+      margin-top: 1.25rem;
+    }
+    .founder-name-block h3 { margin-bottom: 0.15rem; font-size: 1.3rem; }
+    .founder-title { font-size: 0.85rem; color: var(--purple-anchor); font-weight: 600; }
+    .founder-meta  { font-size: 0.78rem; color: var(--text-light); margin-top: 0.2rem; }
+
+    .founder-bio p { font-size: 0.97rem; line-height: 1.85; }
+    .founder-bio .bio-quote {
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: 1.05rem;
+      color: var(--purple-anchor);
+      border-left: 3px solid var(--purple-soft);
+      padding-left: 1.25rem;
+      margin: 1.5rem 0;
+    }
+
+    @media (max-width: 740px) {
+      .founder-inner { grid-template-columns: 1fr; gap: 2rem; }
+      .journey-step:not(:last-child)::after { display: none; }
+      .no-agenda { flex-direction: column; }
+    }
+  </style>
 </head>
 <body>
 
   <nav class="site-nav">
     <div class="nav-inner">
-      <a href="index.html" class="nav-logo"><img src="images/logo-nav.png" alt="AIRA" class="nav-logo-img"></a>
+      <a href="index.html" class="nav-logo"><img src="images/logo-nav.png" alt="AIRA — Auto Injury Recovery Advocates" class="nav-logo-img"></a>
       <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
       <ul class="nav-links">
         <li><a href="start-here.html">Start Here</a></li>
@@ -26,105 +270,178 @@
     </div>
   </nav>
 
-  <!-- PAGE HERO -->
+  <!-- HERO -->
   <div class="page-hero">
     <div class="breadcrumb"><a href="index.html">Home</a> <span>›</span> About</div>
-    <h1>About Us</h1>
-    <p style="max-width:520px; margin: 0.75rem auto 0; color: var(--text-mid);">Who we are, why we exist, and how we work toward lasting change.</p>
+    <h1>AIRA exists because people deserve accurate information when they're hurt and don't know what to do.</h1>
   </div>
 
-  <!-- MISSION -->
-  <section class="section-cozy bg-white">
-    <div class="section-inner">
-      <div class="two-col">
-        <div>
-          <div class="section-eyebrow">Our Mission</div>
-          <h2>We exist to amplify the voices that matter.</h2>
-          <p>AIRA was founded on the belief that policy change only sticks when it comes from the community — not just for it. We bridge the gap between lived experience and legislative change.</p>
-          <p>Our work is nonpartisan, community-first, and grounded in evidence. We believe in dialogue over division, and action over rhetoric.</p>
-        </div>
-        <div>
-          <div class="diagram-placeholder">
-            <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
-              <circle cx="32" cy="32" r="28" stroke="#7b68c8" stroke-width="2" stroke-dasharray="5 3"/>
-              <circle cx="32" cy="32" r="16" stroke="#5440a4" stroke-width="2" stroke-dasharray="4 2"/>
-              <circle cx="32" cy="32" r="6" fill="#5440a4"/>
-            </svg>
-            <p>Mission diagram — add your own illustration here</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- VALUES -->
+  <!-- ══════════════════════════════════
+       ABOUT AIRA
+  ══════════════════════════════════ -->
   <section class="section-cozy bg-cream">
     <div class="section-inner">
-      <div class="section-header">
-        <div class="section-eyebrow">What we believe</div>
-        <h2>Our Core Values</h2>
-      </div>
-      <div class="grid-2">
-        <div class="card-cozy fade-up">
-          <div class="card-icon">🤝</div>
-          <h3>Community First</h3>
-          <p>Every decision we make starts with the people most affected. We listen before we act.</p>
+      <div class="two-col" style="align-items: flex-start; gap: 4rem;">
+
+        <!-- Left: the story -->
+        <div>
+          <div class="section-eyebrow">About AIRA</div>
+          <h2 style="margin-bottom: 1.5rem;">We built AIRA because of what we kept seeing in the clinic.</h2>
+
+          <p>Across twelve years of practice, the pattern repeated. Someone would come in weeks or months after an accident, still in pain, still confused, with no idea what kind of care they could get or that their insurance might cover multiple specialists. A lot of them didn't even know they had options.</p>
+
+          <p>So the first appointment wasn't about treatment. It was about catching someone up on everything they should have known from day one. And something about that felt wrong.</p>
+
+          <!-- Visual: the pattern -->
+          <div style="margin: 2rem 0;">
+            <p style="font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-light); margin-bottom: 0.75rem;">The pattern</p>
+            <div class="journey-path">
+              <div class="journey-step">
+                <div class="journey-dot dot-problem">💥</div>
+                <div class="journey-label">The accident</div>
+              </div>
+              <div class="journey-step">
+                <div class="journey-dot dot-problem">❓</div>
+                <div class="journey-label">Still in pain,<br>still confused</div>
+              </div>
+              <div class="journey-step">
+                <div class="journey-dot dot-problem">⏳</div>
+                <div class="journey-label">Weeks or<br>months pass</div>
+              </div>
+              <div class="journey-step">
+                <div class="journey-dot dot-bad">😔</div>
+                <div class="journey-label">First appointment</div>
+                <div class="journey-sub">"You had options<br>this whole time."</div>
+              </div>
+            </div>
+
+            <div class="path-divider">
+              <div class="path-divider-line"></div>
+              <div class="path-divider-label">What changes with AIRA</div>
+              <div class="path-divider-line"></div>
+            </div>
+
+            <div class="journey-path">
+              <div class="journey-step">
+                <div class="journey-dot dot-problem">💥</div>
+                <div class="journey-label">The accident</div>
+              </div>
+              <div class="journey-step">
+                <div class="journey-dot dot-aira">🧭</div>
+                <div class="journey-label">Find AIRA<br>on day one</div>
+              </div>
+              <div class="journey-step">
+                <div class="journey-dot dot-aira">📋</div>
+                <div class="journey-label">Understand<br>your options</div>
+              </div>
+              <div class="journey-step">
+                <div class="journey-dot dot-good">✅</div>
+                <div class="journey-label">Right care,<br>right away</div>
+              </div>
+            </div>
+          </div>
+
+          <p>Washington State has some of the strongest protections for accident victims anywhere in the country. People have real rights and real coverage here, along with specialists, attorneys, and financial resources that exist to help. But so much of that information never reaches the people who need it, at least not when it actually matters.</p>
         </div>
-        <div class="card-cozy fade-up fade-up-1">
-          <div class="card-icon">🔍</div>
-          <h3>Evidence-Based</h3>
-          <p>Our advocacy is grounded in data, research, and rigorous analysis — not assumptions.</p>
+
+        <!-- Right: mission detail -->
+        <div>
+          <p style="font-family: var(--font-display); font-style: italic; font-size: 1.2rem; color: var(--purple-deep); line-height: 1.5; margin-bottom: 1.5rem;">AIRA started as an answer to a question we kept asking: what if someone could find all of this out on day one?</p>
+
+          <p>We wanted to build something that worked like a guide. A real blueprint for what to do after an accident in Washington State, built without a sales pitch, without a lead form, and without any agenda other than sharing what people actually need to know. So we reached out to the people we trusted:</p>
+
+          <div class="expert-grid">
+            <div class="expert-card"><div class="expert-icon">🦴</div><div class="expert-label">Chiropractors</div></div>
+            <div class="expert-card"><div class="expert-icon">🏃</div><div class="expert-label">Physical therapists</div></div>
+            <div class="expert-card"><div class="expert-icon">🩺</div><div class="expert-label">Nurses</div></div>
+            <div class="expert-card"><div class="expert-icon">👨‍⚕️</div><div class="expert-label">Doctors across disciplines</div></div>
+            <div class="expert-card"><div class="expert-icon">⚖️</div><div class="expert-label">Attorneys who handle injury cases</div></div>
+            <div class="expert-card"><div class="expert-icon">🛡️</div><div class="expert-label">Insurance professionals</div></div>
+            <div class="expert-card"><div class="expert-icon">💼</div><div class="expert-label">Financial experts</div></div>
+          </div>
+
+          <p style="margin-top: 1.5rem;">The platform brings all of them together, because recovering from an accident often requires different kinds of help, and finding that help shouldn't be this hard.</p>
+
+          <div class="no-agenda">
+            <div class="no-agenda-item">
+              <div class="marker">✕</div>
+              <p>Without a sales pitch</p>
+            </div>
+            <div class="no-agenda-item">
+              <div class="marker">✕</div>
+              <p>Without a lead form</p>
+            </div>
+            <div class="no-agenda-item">
+              <div class="marker">✕</div>
+              <p>Without any agenda</p>
+            </div>
+          </div>
         </div>
-        <div class="card-cozy fade-up fade-up-2">
-          <div class="card-icon">🕊️</div>
-          <h3>Nonpartisan</h3>
-          <p>We work across party lines because the issues we fight for affect everyone.</p>
-        </div>
-        <div class="card-cozy fade-up fade-up-3">
-          <div class="card-icon">📣</div>
-          <h3>Transparent</h3>
-          <p>We publish our methods, our funding sources, and our outcomes openly and honestly.</p>
-        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- HISTORY TIMELINE -->
-  <section class="section-cozy bg-white">
-    <div class="section-inner" style="max-width: 760px;">
-      <div class="section-header">
-        <div class="section-eyebrow">Our story</div>
-        <h2>How We Got Here</h2>
+  <!-- PULL QUOTE -->
+  <div class="pull-quote-section">
+    <p class="pull-quote-text">AIRA exists because people deserve accurate information when they're hurt and don't know what to do. And in Washington State especially, that information can make a real difference.</p>
+  </div>
+
+  <!-- ══════════════════════════════════
+       ABOUT THE FOUNDER
+  ══════════════════════════════════ -->
+  <div class="founder-section">
+    <div class="founder-inner">
+
+      <!-- Photo -->
+      <div style="display: flex; flex-direction: column; align-items: center;">
+        <div class="founder-photo-frame">
+          <svg class="deco" viewBox="0 0 280 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="140" cy="140" r="128" stroke="#c8bfee" stroke-width="1.5" stroke-dasharray="6 5"/>
+            <circle cx="140" cy="12"  r="5" fill="#5440a4"/>
+            <circle cx="268" cy="140" r="5" fill="#5440a4"/>
+            <circle cx="140" cy="268" r="5" fill="#5440a4"/>
+            <circle cx="12"  cy="140" r="5" fill="#5440a4"/>
+            <circle cx="238" cy="54"  r="3" fill="#c8bfee"/>
+            <circle cx="238" cy="226" r="3" fill="#c8bfee"/>
+            <circle cx="42"  cy="54"  r="3" fill="#c8bfee"/>
+            <circle cx="42"  cy="226" r="3" fill="#c8bfee"/>
+          </svg>
+          <img
+            src="https://www.redmondspine.com/wp-content/uploads/bb-plugin/cache/Chiropractor-Redmond-WA-Cody-Sandzimier-Meet-The-Team-circle-cfe9a26c96e6c9c481214a9eb2aa8634-5f8db562c3d01.jpg"
+            alt="Dr. Cody Sandzimier, D.C."
+            class="founder-photo"
+          >
+        </div>
+        <div class="founder-name-block">
+          <h3>Dr. Cody Sandzimier</h3>
+          <div class="founder-title">D.C. — Chiropractor &amp; Founder</div>
+          <div class="founder-meta">Practicing since 2014 · Pacific Northwest</div>
+        </div>
       </div>
-      <!-- Simple timeline using dotted design language -->
-      <div style="position: relative; padding-left: 2rem; border-left: 2px dotted var(--purple-soft);">
-        <div style="margin-bottom: 2.5rem; position: relative;">
-          <div style="position:absolute; left:-2.6rem; width:1.1rem; height:1.1rem; background:var(--purple-anchor); border:3px solid var(--white-pure); border-radius:50%;"></div>
-          <div class="section-eyebrow">2017</div>
-          <h4>Founded</h4>
-          <p>A small group of neighbors came together after a local housing crisis. AIRA was born from that kitchen table conversation.</p>
+
+      <!-- Bio -->
+      <div class="founder-bio">
+        <div class="section-eyebrow">About the Founder</div>
+        <h2 style="margin-bottom: 1.5rem;">I've been practicing chiropractic care across the Pacific Northwest since 2014, and the path I took to get here is worth knowing.</h2>
+
+        <p>I grew up in California playing baseball, spending several years as a professional catcher in the minor leagues with organizations like the Angels, Mariners, and Braves. When two shoulder surgeries in two years ended my career in 2009, I started asking a different question: what do I do with everything I've learned about the human body?</p>
+
+        <p>I knew I wanted to help people, and I wanted to do it in a way that reached far beyond athletes. So I drove around Southern California walking into chiropractic offices unannounced, asking the doctors there what the work was actually like. I visited 25 or 30 offices. Every single doctor loved what they did. Every one of them told me I should become a chiropractor.</p>
+
+        <p>I listened. I started school in 2011, graduated in April 2014, took over a clinic in Seattle's Capitol Hill neighborhood, and drove north.</p>
+
+        <p>In the clinic, I have a natural ability to make people feel comfortable fast, and a genuine drive to find the root of what's going on rather than treating the surface. I hold multiple certifications across posture analysis, severe injuries, and neurological conditions. But patients tend to remember me for asking a lot of questions and for making the whole thing feel manageable.</p>
+
+        <div class="bio-quote">
+          "I don't really work. I get to hang out with cool people all day long and make them feel better."
         </div>
-        <div style="margin-bottom: 2.5rem; position: relative;">
-          <div style="position:absolute; left:-2.6rem; width:1.1rem; height:1.1rem; background:var(--purple-mid); border:3px solid var(--white-pure); border-radius:50%;"></div>
-          <div class="section-eyebrow">2019</div>
-          <h4>First Policy Win</h4>
-          <p>Our coalition secured the city's first renter protection ordinance after 18 months of organizing and testimony.</p>
-        </div>
-        <div style="margin-bottom: 2.5rem; position: relative;">
-          <div style="position:absolute; left:-2.6rem; width:1.1rem; height:1.1rem; background:var(--purple-mid); border:3px solid var(--white-pure); border-radius:50%;"></div>
-          <div class="section-eyebrow">2021</div>
-          <h4>Expanded to Education & Environment</h4>
-          <p>Community feedback led us to broaden our scope. We launched two new issue campaigns with new partners.</p>
-        </div>
-        <div style="position: relative;">
-          <div style="position:absolute; left:-2.6rem; width:1.1rem; height:1.1rem; background:var(--purple-deep); border:3px solid var(--white-pure); border-radius:50%;"></div>
-          <div class="section-eyebrow">Today</div>
-          <h4>12,000+ Members & Growing</h4>
-          <p>We're now a statewide network with three active campaigns and a stronger community than ever.</p>
-        </div>
+
+        <p>Over a decade of practice, I kept noticing the same gap: people coming in after accidents who had no idea what they had available to them or what their options were. So I built AIRA.</p>
       </div>
+
     </div>
-  </section>
+  </div>
 
   <!-- FOOTER -->
   <footer class="site-footer">
@@ -132,24 +449,17 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="nav-logo"><img src="images/logo-nav.png" alt="AIRA" class="nav-logo-img"></div>
-          <p>Advocating for a better future. Building the community that makes change happen.</p>
+          <p>Free guidance for Washington State auto accident survivors.</p>
         </div>
         <div class="footer-col"><h5>Pages</h5><ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="start-here.html">Start Here</a></li>
+          <li><a href="guide.html">Full Guide</a></li>
           <li><a href="about.html">About Us</a></li>
-          <li><a href="issues.html">Our Issues</a></li>
-          <li><a href="resources.html">Resources</a></li>
-          <li><a href="team.html">Team</a></li>
-        </ul></div>
-        <div class="footer-col"><h5>Get Involved</h5><ul>
-          <li><a href="contact.html">Contact Us</a></li>
-          <li><a href="volunteer.html">Volunteer</a></li>
-          <li><a href="donate.html">Donate</a></li>
-          <li><a href="newsletter.html">Newsletter</a></li>
         </ul></div>
         <div class="footer-col"><h5>Resources</h5><ul>
-          <li><a href="blog/index.html">Blog</a></li>
-          <li><a href="resources.html#reports">Reports</a></li>
-          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="guide.html">Injury Guide</a></li>
+          <li><a href="start-here.html">After an Accident</a></li>
         </ul></div>
       </div>
       <div class="footer-bottom">
